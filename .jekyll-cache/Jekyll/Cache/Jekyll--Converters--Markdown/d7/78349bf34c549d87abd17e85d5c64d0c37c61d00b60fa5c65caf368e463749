@@ -1,0 +1,56 @@
+I"�
+<ul id="markdown-toc">
+  <li><a href="#about-the-site" id="markdown-toc-about-the-site">About the site</a>    <ul>
+      <li><a href="#admin-tools" id="markdown-toc-admin-tools">Admin tools</a></li>
+      <li><a href="#about-comments" id="markdown-toc-about-comments">About comments</a></li>
+      <li><a href="#sample-markdowns" id="markdown-toc-sample-markdowns">Sample markdowns</a></li>
+    </ul>
+  </li>
+  <li><a href="#about-me" id="markdown-toc-about-me">About me</a></li>
+</ul>
+
+<h2 id="about-the-site">About the site</h2>
+<p>这个网站由github和jekyll创建。仅用来记录个人的一些技术心得与人生体会。 
+对这个网站的风格感兴趣的可以fork我github上的工程。<a href="https://github.com/lbbxsxlz/lbbxsxlz.github.io">template</a></p>
+
+<h3 id="admin-tools">Admin tools</h3>
+<ul>
+  <li>site <a href="https://github.com/LiXizhi/lixizhi.github.io/blob/master/_config.yml">configuration file</a></li>
+  <li>Jekyll + <a href="http://lixizhi.duoshuo.com/admin/">lixizhi.duoshuo.com</a></li>
+  <li>Jekyll + <a href="http://lixizhi.disqus.com/admin/">lixizhi.disqus.com</a></li>
+  <li>Jekyll theme templates: <a href="http://jekyllthemes.org">jekyllthemes.org</a>
+    <ul>
+      <li>Theme used: <a href="http://jekyllthemes.org/themes/cool-concise-high-end/">cool-concise</a></li>
+    </ul>
+  </li>
+  <li>Jekyll official site: <a href="http://jekyllrb.com">jekyllrb.com</a></li>
+  <li>YAML for human readable markdown: <a href="http://www.yaml.org/">yaml.org</a></li>
+  <li>markdown reference: <a href="http://kramdown.gettalong.org/quickref.html">kramdown</a></li>
+</ul>
+
+<h3 id="about-comments">About comments</h3>
+<p>Add a variable called <code class="language-plaintext highlighter-rouge">comments</code> to the <a href="http://jekyllrb.com/docs/frontmatter/">YAML front matter</a> and set its value to true. A sample might look like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+comments: true
+# other options
+---
+</code></pre></div></div>
+
+<h3 id="sample-markdowns">Sample markdowns</h3>
+<p>Click view source at the bottom of the page</p>
+
+<ul>
+  <li>Embedding code</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-lua" data-lang="lua"><span class="kd">local</span> <span class="k">function</span> <span class="nf">main</span><span class="p">()</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"hello world everyone"</span><span class="p">)</span>
+<span class="k">end</span></code></pre></figure>
+
+<h2 id="about-me">About me</h2>
+
+<p>My primary research interest is in artificial intelligence, programming and education. See my project page for details.</p>
+
+:ET
