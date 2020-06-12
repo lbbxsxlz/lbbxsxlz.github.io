@@ -13,12 +13,14 @@ permalink: /about/
 对这个网站的风格感兴趣的可以fork我在[github](https://github.com/lbbxsxlz/lbbxsxlz.github.io)上的工程。 
 
 ## 关于我
-![](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/about/me.png)
+
+![me](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/about/me.png)
+
 热爱动漫，是海贼王的忠实粉丝。从事软件行业，存粹是因缘际会，目前算是一个合格的程序员吧。
 
 ## 工作经历
     ---
-    *浙江大华技术股份有限公司*
+    ***浙江大华技术股份有限公司***
         方向一：设备安全与设备溯源 
             Boot级的安全启动，kernel验签启动；Kernel、根文件系统、应用程序固件加解密。
             类似TRUST Zone的设备可信执行环境；设备RSA签名验证升级，密钥统一管理与分发。
