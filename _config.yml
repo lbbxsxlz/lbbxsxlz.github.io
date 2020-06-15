@@ -28,7 +28,7 @@ disqus_url: "http://lbbxsxlz.github.io"
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: 5307f381c6753dc374226f13e184df87
-#google_analytics_id: UA-72449510-4 # google 分析追踪id
+google_analytics_id: UA-169391398-1 # google 分析追踪id
 
 # Build settings
 markdown: kramdown
