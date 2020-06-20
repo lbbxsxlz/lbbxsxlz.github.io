@@ -18,11 +18,13 @@ viewsourceroot: https://github.com/lbbxsxlz/lbbxsxlz.github.io/
 newsourceroot: https://github.com/lbbxsxlz/lbbxsxlz.github.io/
 #########################################
 # for duoshuo.com commenting system, uncomment following line if you do not want to include duoshuo.com. 
+#duoshuo_shortname: lixizhi
+#duoshuo_url: "http://lbbxsxlz.github.io"
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
-disqus_shortname: lbbxsxlz
+disqus_shortname: lixizhi
 disqus_url: "http://lbbxsxlz.github.io"
 #########################################
-
+intensedebate_comments: true
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
