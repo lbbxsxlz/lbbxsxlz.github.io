@@ -25,6 +25,12 @@ disqus_shortname: lixizhi
 disqus_url: "http://lbbxsxlz.github.io"
 #########################################
 intensedebate_comments: true
+
+#gitment
+comment_gitment_repo: lbbxsxlz.github.io
+comment_gitment_clientId: 3862a968d2e156809eae
+comment_gitment_clientSecret: ddd9033f2211fe05b59ae4fe7c4d561f8ccccbfb
+
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
