@@ -21,10 +21,10 @@ newsourceroot: https://github.com/lbbxsxlz/lbbxsxlz.github.io/
 #duoshuo_shortname: lixizhi
 #duoshuo_url: "http://lbbxsxlz.github.io"
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
-disqus_shortname: lixizhi
-disqus_url: "http://lbbxsxlz.github.io"
+#disqus_shortname: lixizhi
+#disqus_url: "http://lbbxsxlz.github.io"
 #########################################
-intensedebate_comments: true
+#intensedebate_comments: true
 
 #gitment
 comment_gitment_repo: lbbxsxlz.github.io
