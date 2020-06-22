@@ -28,6 +28,21 @@ layout: default
 	{% include comments.html %}
   </div>
   
+	<div id="gitmentContainer"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+		owner: 'lbbxsxlx',
+		repo: 'lbbxsxlz.github.io',
+		oauth: {
+			client_id: '3862a968d2e156809eae',
+			client_secret: 'ddd9033f2211fe05b59ae4fe7c4d561f8ccccbfb',
+		},
+	});
+	gitment.render('gitmentContainer');
+	</script>
+  
   <div id="content" class="col-sm-3">
     <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
     <div id="myAffix" class="shadow-bottom-center hidden-xs" >
