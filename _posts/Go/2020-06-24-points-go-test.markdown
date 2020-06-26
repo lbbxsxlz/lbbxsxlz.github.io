@@ -34,5 +34,5 @@ date:   2020-06-24 20:10:54
 	e.p. `go test mycompress`
 
 ## 参考代码 
-	[github]: https://github.com/lbbxsxlz/gzCoredump/blob/master/src/mycompress/mycompress_test.go
+&nbsp;&nbsp;详见[github](https://github.com/lbbxsxlz/gzCoredump/blob/master/src/mycompress/mycompress_test.go)上的test代码
 	
