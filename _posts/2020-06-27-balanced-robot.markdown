@@ -7,10 +7,5 @@ comments: true
 ---
 *** 读研期间制作的项目 *** 
 
-<iframe 
-    height=450 
-    width=800 
-    src='https://v.youku.com/v_show/id_XNjAzNzA4MTYw.html' 
-    frameborder=0 
-    'allowfullscreen'>
-</iframe>
+
+<iframe height=498 width=510 src='https://player.youku.com/embed/XNjAzNzA4MTYw' frameborder=0 'allowfullscreen'></iframe>
