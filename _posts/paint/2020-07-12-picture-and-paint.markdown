@@ -19,4 +19,4 @@ comments: true
     岁月变迁，刻痕留迹，
     红日落尘，风光旖旎
 
-![西兴码头](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/paint/xixing.JPG)
+![西兴码头](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/paint/xixing.JPG)
