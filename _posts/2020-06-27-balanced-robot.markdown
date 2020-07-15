@@ -6,9 +6,4 @@ categories: Robot
 comments: true
 ---
 *** 读研期间制作的项目 *** 
-
-
-
-<video width="510" height="498" controls>
-<source src=“https://player.youku.com/embed/XNjAzNzA4MTYw”>
-</video>
+![V-os1](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/Virtual-oscilloscope.gif)
