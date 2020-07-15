@@ -8,11 +8,11 @@ comments: true
 *** 读研期间制作的项目 ***
 
 ## 虚拟示波器界面
-虚拟示波器与真实示波器对比，信号来源与真实示波器的矫正信号<br>
+虚拟示波器与真实示波器对比，信号来源于真实示波器的矫正信号<br>
 ![V-os1](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/Virtual-oscilloscope.gif)
 
 ## 转速控制
-设置虚拟示波器上的占空比来调整电机的转速<br>
+设置虚拟示波器上的speed值，机器人会相应的调整占空比来控制电机的转速<br>
 ![I-speed](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/Improve-speed.gif)
 
 ## 自主平衡
