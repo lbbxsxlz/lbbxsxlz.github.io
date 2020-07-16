@@ -31,12 +31,12 @@ coredump实时压缩工具，提供压缩core文件、core文件与APP一一对�
 
 该测试工程依赖于汉语言包HanLP，Jpype 使用汉语包中的关键词提取、短语提取、句法分析与文本推荐功能
 
-## A two-wheeled self-balancing mobile robot
+## A two-wheeled self-balancing mobile platform
 * Started: 2014-present
 * Paper 1: [IEEE](https://ieeexplore.ieee.org/abstract/document/6359467)
 * Paper 2: [CNKI](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201401&filename=1014151516.nh&v=MDE0MjRSN3FmWU9kcUZDdmxVN3pMVkYyNkdySzlIOVROcVpFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1U=)
 
-两轮自平衡移动机器人，由加速度计、陀螺仪经过数据融合后得到倾角,根据倾角的变化，机器人输出力矩，从而使得保证机器人一直处于自平衡状态。  
+该移动平台是两轮自平衡服务机器人的基础平台，它能自动检测当前自身的倾斜信息，能根据倾斜的角度与角度变化率来调节力矩的输出，从而达到平衡的目的。该移动平台与上位机之间进行的数据、指令交互，是通过自主设计的通信协议来保障的。利用设计的通信协议，用户就能实时地监测平台的运行状态，也可通过上位机软件来操控平台运动。  
 
 ![s-b-r](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/self-balance-robot.jpg)
 
