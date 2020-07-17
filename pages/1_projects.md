@@ -31,6 +31,7 @@ coredump实时压缩工具，提供压缩core文件、core文件与APP一一对�
 
 该测试工程依赖于汉语言包HanLP，Jpype 使用汉语包中的关键词提取、短语提取、句法分析与文本推荐功能
 
+
 ## A two-wheeled self-balancing mobile platform
 * Started: 2014-present
 * Paper 1: [IEEE](https://ieeexplore.ieee.org/abstract/document/6359467)
@@ -41,3 +42,16 @@ coredump实时压缩工具，提供压缩core文件、core文件与APP一一对�
 ![s-b-r](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/self-balance-robot.jpg)
 
 ![self-balance](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/n-balance.gif)
+
+
+## A wheel-type mobile robot for rough terrain
+* Started: 2013-present
+* Paper 1: [IEEE](https://ieeexplore.ieee.org/document/6491038)
+
+该轮式机器人适合多种地形，具有较强的越障能力，可用于特殊地形的探险与搜救。其具有三组主动轮，有两套悬挂系统，具有较大的爬坡角，能适应各种地形。机器人自带超声波传感器与摄像头，能自主避障。
+
+![wrt](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/wrt.jpg)
+
+![over](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/over.gif)
+
+![over1](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/Virtual-oscilloscope/over1.gif)
