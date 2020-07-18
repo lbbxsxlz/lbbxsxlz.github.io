@@ -31,7 +31,7 @@ permalink: /about/
             重构程序打包流程，优化程序中squashfs文件系统制作。设备启动时间优化。
         方向三：驱动开发与维护
             以太网FlowControl、NAT、VLAN、mode and duplex AutoChange、IP search
-            4G、5G、WiFi、SD Card; 双4G NAT实时切换
+            4G、5G、WiFi、SD Card; 双4G NAT实时切换 TUN/TAP虚拟网卡
 
     *** 锐捷网络有限公司 ***
         工作一：基于本地虚拟化的云办公系统开发
