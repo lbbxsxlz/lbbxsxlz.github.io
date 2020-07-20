@@ -54,3 +54,15 @@ jekyll基于ruby，即得先安装ruby, 一定要[下载](https://rubyinstaller.
 
 然后使用jekyll server即可启动静态网页，使用127.0.0.1：4000端口即可访问，4000端口是jekyll的默认端口。<br>
 ![server](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/17.png)
+
+网页的效果如下:<br>
+![web](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/18.png)
+
+把fblog工程下的_site目录下的文件上传到github上即完成了使用github创建个人blog的工程。然后在该工程中根据需要修改相关的页面来凸显个人的风格即可。但是我并不推荐这样的方式。
+
+&ensp;&ensp;&ensp;&ensp;有一种更方便的方式是充分利用[jekyll官方网站](http://jekyllthemes.org/)上已发布的主题，根据个人喜好选择其中的一种主题（大部分主题提供了展示的demo），下载主题，然后在主题的基础上做相应的修改，例如发布自己的内容。最后把修改后的主题上传到GitHub上，即完成了个人博客的创建。
+
+&ensp;&ensp;&ensp;&ensp;在项目根目录下的 _posts目录创建markdown文档，md文件的语法请参考相关的网站。这里注意md文档命名要添加 “yyyy-mm-dd”的前缀，例如2020-06-19-零基础利用GitHub和Jekyll创建个人博客站点.markdown。然后把创建的markdown文件上传，大约两分钟之后，访问工程的域名，即可看到发布的内容。
+
+## gitment评论系统
+&ensp;&ensp;&ensp;&ensp;Gitment 是基于 GitHub Issues 的评论系统。
