@@ -75,7 +75,7 @@ comment_gitment_clientSecret: dxx9033f2211fe05b59ae4fe7c4d561f8xxccbfb
 ```
 然后在html文件中添加js代码，一般情况下是在_layouts目录下的post.html文件，例如我添加的内容如下:<br>
 ![gitment](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/19.png)
-以上就是gitment配置的部分，不过gitment每篇博客都需要手动初始化评论功能。初始化之后的效果如下图所示。
+以上就是gitment配置的部分，不过gitment每篇博客都需要手动初始化评论功能。初始化之后的效果如下图所示。<br>
 ![comment](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/20.png)
 
 
