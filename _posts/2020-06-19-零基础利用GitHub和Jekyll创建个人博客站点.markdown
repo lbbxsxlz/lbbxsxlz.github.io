@@ -43,7 +43,7 @@ comments: true
 ## 静态网页
 &ensp;&ensp;&ensp;&ensp;在基于github的blog工程上发布或修改新的文章，想要看效果，就必须先把修改提交，然后访问相应的网页查看。这样的操作未免太繁琐，幸好[jekyll](https://jekyllrb.com/)就提供了静态网页的功能。
 jekyll基于ruby，即得先安装ruby, 一定要[下载](https://rubyinstaller.org/downloads/)WITH DEVKIT版本，不然后续就有苦吃了，笔者在此入了坑。安装完之后，在dos窗口输入ruby -y，有输出即表述安装成功。
-去RubyGems的[官方](https://rubygems.org/pages/download)网站下载zip格式的包，然后解压，在dos命令行中进入到rubygem的解压目录下，执行ruby setup.rb，其安装过程大致如下<br>，
+去RubyGems的[官方](https://rubygems.org/pages/download)网站下载zip格式的包，然后解压，在dos命令行中进入到rubygem的解压目录下，执行ruby setup.rb，其安装过程大致如下<br>
 ![setup.rb](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/14.png)  
 
 安装完毕之后就可以使用gem install jekyll命令安装jekyll,<br>
