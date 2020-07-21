@@ -65,4 +65,18 @@ jekyll基于ruby，即得先安装ruby, 一定要[下载](https://rubyinstaller.
 &ensp;&ensp;&ensp;&ensp;在项目根目录下的 _posts目录创建markdown文档，md文件的语法请参考相关的网站。这里注意md文档命名要添加 “yyyy-mm-dd”的前缀，例如2020-06-19-零基础利用GitHub和Jekyll创建个人博客站点.markdown。然后把创建的markdown文件上传，大约两分钟之后，访问工程的域名，即可看到发布的内容。
 
 ## gitment评论系统
-&ensp;&ensp;&ensp;&ensp;Gitment 是基于 GitHub Issues 的评论系统。
+&ensp;&ensp;&ensp;&ensp;Gitment 是基于 GitHub Issues 的评论系统。gitment的具体示例，可以点击查看官方[Demo Page](https://imsun.github.io/gitment/)。首先我们需要申请一个Github OAuth Application，点击https://github.com/settings/applications/new进行注册，填写相关信息，注意：在Authorization callback URL填自己的网站url，例如https://lbbxsxlz.github.io，创建成功后，你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。
+&ensp;&ensp;&ensp;&ensp;然后在blog工程的配置文件_config.yml中添加上一步中获得的client ID和client secret。例如：<br>
+```
+#gitment
+comment_gitment_repo: lbbxsxlz.github.io
+comment_gitment_clientId: 3862a968x2e1568x9eae
+comment_gitment_clientSecret: dxx9033f2211fe05b59ae4fe7c4d561f8xxccbfb
+```
+然后在html文件中添加js代码，一般情况下是在_layouts目录下的post.html文件，例如我添加的内容如下:<br>
+![gitment](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/blog/19.png)
+
+
+
+
+
