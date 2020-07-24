@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  "天翼云面试问题汇总"
+title:  "天翼云面试复盘"
 comments: true
 categories: Interview
 date:   2020-07-24 16:30:00
 ---
+
+## 自我介绍
+自我介绍不够顺畅，没有分清主次，有待联系加强
 
 ## 项目有关问题
 * usb热插拔是怎么实现的，内核与用户态怎么交互—— 中断   libusb热插拔callback
@@ -60,5 +63,6 @@ char * strncpy(char* src, char* dst, int len)
 }
 ```
 
-
+## 自我评价
+此次面试前未重组准备，从公司匆匆赶回，状态略有不佳。
 	
