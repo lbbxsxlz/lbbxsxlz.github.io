@@ -20,14 +20,14 @@ date:   2020-07-24 16:30:00
 * core文件压缩实现原理
 * core文件文件格式   [ref](https://blog.csdn.net/_xiao/article/details/22389997)
 * 可信环境与可信签名实现原理
-* ARM trustZone TEE 技术
-* LSM模块
+* ARM trustZone TEE 技术  [ref](https://www.jianshu.com/p/3f952f2c8bf4)
+* LSM模块  [ref](https://www.ibm.com/developerworks/cn/linux/l-lsm/part1/index.html)
 
 ## 基础知识
 * 堆 和 栈
-* bss data  rodata
-* shell -e选项
-* shell 脚本处理数据  内容替换（例如exe） 排序  去重
+* bss  data  rodata
+* shell -e选项  若指令传回值不等于0，则立即退出   shell $@  传入的参数列表
+* shell 脚本处理数据  内容替换（例如exe） 排序  去重  sort  uniq
 
 ## 编程相关
 ```
@@ -38,7 +38,7 @@ date:   2020-07-24 16:30:00
     printf("%s", p);
 	return 0;
 ```
-以上内容是否又问题，如果有问题怎么修改
+以上内容是否有问题，如果有问题怎么修改
 
 strncpy的实现
 ```
