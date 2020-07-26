@@ -10,13 +10,12 @@ date:   2020-07-24 16:30:00
 自我介绍不够顺畅，没有分清主次，有待练习加强
 
 ## 项目有关问题
-* usb热插拔是怎么实现的，内核与用户态怎么交互   中断   libusb热插拔callback
+* usb热插拔是怎么实现的，内核与用户态怎么交互  中断   libusb热插拔callback
 * 块设备加密实现  cryptsetup命令 
 * 块设备怎么透传到Windows镜像   Libvirt XML disk对象定义 virsh attach挂载到虚拟机镜像中
 * 网络白名单实现  iptables
 * Windows镜像快照 qemu镜像格式    Qcow2  qemu-img(快照管理 commit rebase) virsh(libvirt命令 快照管理)
 * 教师管理软件的使用场景
-
 * core文件压缩实现原理 管道加可执行文件
 * core文件文件格式   [ref](https://blog.csdn.net/_xiao/article/details/22389997)
 * 可信环境与可信签名实现原理
@@ -31,12 +30,10 @@ date:   2020-07-24 16:30:00
 
 ## 编程相关
 ```
-	char* p = "1234";
-    
+    char* p = "1234"; 
     *p = "abc";
     
     printf("%s", p);
-	return 0;
 ```
 以上内容是否有问题，如果有问题怎么修改
 
