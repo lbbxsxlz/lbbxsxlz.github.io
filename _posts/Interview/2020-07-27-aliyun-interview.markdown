@@ -50,16 +50,16 @@ date:   2020-07-27 20:30:07
 ```
 int IsBigEndian(void)
 {
-	int short = 0x1234;
-  	char *ptr = &num;
+    int short = 0x1234;
+    char *ptr = &num;
   
-  	if (ptr[0] == 0x34)
+    if (ptr[0] == 0x34)
     {
-    	return 0;
+        return 0;
     }
-  	else
+    else
     {
-    	return 1;
+        return 1;
     }
 }
 ```
@@ -67,33 +67,32 @@ memcpy的实现，源地址与目的地址有重叠
 ```
 void * mymemncpy(void* src, void* dst, int len)
 {
-	if (NULL == dst || NULL == src)
+    if (NULL == dst || NULL == src)
     {
-    	return NULL;
+        return NULL;
     }
   
-  	char* dstTmp = char*(dst);
-  	char* srcTmp = char*(src);
-  	int i;
+    char* dstTmp = char*(dst);
+    char* srcTmp = char*(src);
+    int i;
   
-  	//重叠部分处理
-  	if (dstTmp > srcTmp && dstTmp < srcTmp + len)
+    //重叠部分处理
+    if (dstTmp > srcTmp && dstTmp < srcTmp + len)
     {
-    	for (i = len -1; i != -1; --i)
+        for (i = len -1; i != -1; --i)
         {
-        	dstTmp[i] = srcTmp[i];
-        }
-          
+            dstTmp[i] = srcTmp[i];
+        }      
     }
-  	else
+    else
     {
-    	for (i = 0, i < len; i++)
+        for (i = 0, i < len; i++)
         {
-        	dstTmp[i] = srcTmp[i]; 
+            dstTmp[i] = srcTmp[i]; 
         }
     }
   
-  	return dst;
+    return dst;
 }
 ```
 	
