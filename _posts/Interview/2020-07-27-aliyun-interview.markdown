@@ -50,7 +50,7 @@ date:   2020-07-27 20:30:07
 ```
 int IsBigEndian(void)
 {
-    int short = 0x1234;
+    short num = 0x1234;
     char *ptr = &num;
   
     if (ptr[0] == 0x34)
