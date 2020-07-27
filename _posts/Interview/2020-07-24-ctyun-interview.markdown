@@ -32,7 +32,7 @@ date:   2020-07-24 16:30:00
 ```
     char* p = "1234"; 
     *p = "abc";
-    
+        
     printf("%s", p);
 ```
 以上内容是否有问题，如果有问题怎么修改
@@ -41,22 +41,22 @@ strncpy的实现
 ```
 char * strncpy(char* src, char* dst, int len)
 {
-	if (NULL == dst || NULL == src)
+    if (NULL == dst || NULL == src)
     {
-    	return NULL;
+        return NULL;
     }
   
-  	char* dstTmp = dst;
+    char* dstTmp = dst;
   
-  	char* srcTmp = src;
-  	int i;
+    char* srcTmp = src;
+    int i;
   
-	for (i = 0, i < len; i++)
+    for (i = 0, i < len; i++)
     {
         dstTmp[i] = srcTmp[i]; 
     }
 
-  	return dst;
+    return dst;
 }
 ```
 
