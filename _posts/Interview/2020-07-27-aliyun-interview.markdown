@@ -38,7 +38,7 @@ date:   2020-07-27 20:30:07
 * ifconfig与ifup的区别
 * 自旋锁与互斥量的区别
 * free 中的buf与cache区别
-* tcp连接状态，什么时候进入TIME_WAIT状态
+* tcp协议的连接状态，什么时候进入TIME_WAIT状态
 * uboot启动内核过程
 * x86_64的linux服务器panic时如何调试
 * crash命令使用细节
