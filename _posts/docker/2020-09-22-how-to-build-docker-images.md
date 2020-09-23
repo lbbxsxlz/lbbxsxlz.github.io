@@ -3,7 +3,7 @@ layout: post
 title:  "How to build Docker images "
 comments: true
 categories: docker
-date:   2020-09-12 20:10:54
+date:   2020-09-22 21:30:54
 ---
  
 ## 拉取 ubuntu 16.04 镜像
