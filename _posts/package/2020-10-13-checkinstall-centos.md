@@ -6,8 +6,8 @@ categories: package
 date:   2020-10-13 16:20:54
 ---
 
-[ref1](https://www.cnblogs.com/moceanliu/p/4933263.html)
-[ref2](https://serverfault.com/questions/152704/checkinstall-failed-with-root-rpmbuild-has-no-source-directory)
+[ref1](https://www.cnblogs.com/moceanliu/p/4933263.html)<br>
+[ref2](https://serverfault.com/questions/152704/checkinstall-failed-with-root-rpmbuild-has-no-source-directory)<br>
 
 ## 下载checkinstall源码
 点击[此处](https://asic-linux.com.mx/~izto/checkinstall/)
@@ -18,14 +18,14 @@ tar zxvf checkinstall-1.6.2.tar.gz
 cd checkinstall-1.6.2.tar.gz
 ``` 
 
-直接运行make 会出现以下错误
-installwatch.c:2942: error: conflicting types for ‘readlink’
-/usr/include/unistd.h:828: note: previous declaration of ‘readlink’ was here
-installwatch.c:3080: error: conflicting types for ‘scandir’
-/usr/include/dirent.h:252: note: previous declaration of ‘scandir’ was here
-installwatch.c:3692: error: conflicting types for ‘scandir64’
-/usr/include/dirent.h:275: note: previous declaration of ‘scandir64’ was here
-make[1]: *** [installwatch.o] Error 1
+直接运行make 会出现以下错误<br>
+installwatch.c:2942: error: conflicting types for ‘readlink’<br>
+/usr/include/unistd.h:828: note: previous declaration of ‘readlink’ was here<br>
+installwatch.c:3080: error: conflicting types for ‘scandir’<br>
+/usr/include/dirent.h:252: note: previous declaration of ‘scandir’ was here<br>
+installwatch.c:3692: error: conflicting types for ‘scandir64’<br>
+/usr/include/dirent.h:275: note: previous declaration of ‘scandir64’ was here<br>
+make[1]: *** [installwatch.o] Error 
 
 需要修改installwatch.c的源码，具体如下：
 
