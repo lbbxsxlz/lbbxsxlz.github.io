@@ -27,16 +27,16 @@ docker login
 ```
 cat ~/.docker/config.json 
 ```
-{
-        "auths": {
-                "https://index.docker.io/v1/": {
-                        "auth": "bGJieHN4bHo6bGJieHN4bHpAMTk4OA=="
-                }
-        },
-        "HttpHeaders": {
-                "User-Agent": "Docker-Client/19.03.12 (linux)"
-        }
-}
+{<br>
+        "auths": {<br>
+                "https://index.docker.io/v1/": {<br>
+                        "auth": "bGJieHN4bHo6bGJieHN4bHpAMTk4OA=="<br>
+                }<br>
+        },<br>
+        "HttpHeaders": {<br>
+                "User-Agent": "Docker-Client/19.03.12 (linux)"<br>
+        }<br>
+}<br>
 
 ## 提交docker镜像,创建镜像
 ```
