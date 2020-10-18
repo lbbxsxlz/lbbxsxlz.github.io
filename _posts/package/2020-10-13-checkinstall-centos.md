@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  "install checkinstall in centos"
+title:  "在centos7上安装、使用checkinstall"
 comments: true
 categories: package
 date:   2020-10-13 16:20:54
 ---
 
+参考：
 [ref1](https://www.cnblogs.com/moceanliu/p/4933263.html)<br>
 [ref2](https://serverfault.com/questions/152704/checkinstall-failed-with-root-rpmbuild-has-no-source-directory)<br>
 
 ## 下载checkinstall源码
-点击[此处](https://asic-linux.com.mx/~izto/checkinstall/)
+点击[此处](https://asic-linux.com.mx/~izto/checkinstall/)，找到download下载即可
 
 ## 修改代码编译
 ```
@@ -122,9 +123,14 @@ $RPMBUILD -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} "$SPEC_PATH" &> ${TMP_DIR}/rpmbu
 ```
 $RPMBUILD -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} --buildroot $BROOTPATH "$SPEC_PATH" &> ${TMP_DIR}/rpmbuild.log
 ```
-此时即可执行make install
 
-## 修改/usr/local/lib/checkinstall/checkinstallrc文件
+## 编译安装
+```
+make;make install
+```
+
+## 在centos上使用checkinstall制作rpm包 
+需要修改/usr/local/lib/checkinstall/checkinstallrc文件
 ```
 INSTYPE=""
 ```
@@ -139,8 +145,8 @@ INSTYPE="R"
 　　ERROR: ld.so: object '/usr/local/lib64/installwatch.so' from LD_PRELOAD cannot be preloaded: ignored.
 
 通过以下命令解决
-```
 
+```
 echo "/usr/local/lib64" >/etc/ld.so.conf.d/installwatch.conf
 ln -s /usr/local/lib/installwatch.so /usr/local/lib64/installwatch.so
 ldconfig
@@ -152,7 +158,7 @@ ldconfig
 wget http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
 tar zxvf hello-2.10.tar.gz
 cd hello-2.10;./configure;make
-checkinstall -y  --backup=no --install=no --pkgname=Core_zlib --pkgversion=1.0 --pkgrelease=`date +"%Y%m%d%H"`  --pkggroup=IPDGroup --maintainer=li_binbin1@dahuatech.com --provides=Intellif --pakdir .
+checkinstall -y  --backup=no --install=no --pkgname=hello --pkgversion=1.0 --pkgrelease=`date +"%Y%m%d%H"`  --pkggroup=IPDGroup --maintainer=lbbxsxlz@gmail.com --provides=Intellif --pakdir .
 ```
 
 ## 错误修复
