@@ -20,10 +20,11 @@ date:   2020-06-24 20:10:54
 	例如 TestMyCompress
 
 ## 函数参数
-	函数参数必须是 `t *testing.T` 
+	函数参数必须是 `t *testing.T` 或 b *testing.B
+
 	
 ## 依赖关系
-	go test命令 依赖于$GOPATH 环境变量
+	go test命令 依赖于$GOPATH 环境变量，文件要在$GOPATH/src/下
 	
 ## 综述
 	综合以上描述，则定义的函数形如：
