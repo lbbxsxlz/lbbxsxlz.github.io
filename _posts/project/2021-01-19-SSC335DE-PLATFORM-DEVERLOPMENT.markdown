@@ -39,4 +39,7 @@ comments: true
 1、需要在usb的core中添加proc文件系统，对应的内核配置为CONFIG_USBDEVICEFS<br>
 2、内核配置中开启HCD配置（适配USB2.0）
 
+## wifi
+1、设置wifi模块使能引脚，增加相应的配置
+2、根据能力加载wifi驱动
 
