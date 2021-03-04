@@ -6,7 +6,7 @@ categories: Interview
 date:   2021-02-27 20:30:07
 ---
 
-&ensp;&ensp;&ensp;&ensp;暂时还通知结果，但是就面试体验来说，很糟糕
+&ensp;&ensp;&ensp;&ensp;一轮电话面试，现场技术面+HR面。面试体验不佳。
 
 ## 项目有关问题
 * 安全启动？
