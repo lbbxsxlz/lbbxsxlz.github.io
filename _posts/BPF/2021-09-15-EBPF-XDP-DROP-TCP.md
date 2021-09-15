@@ -2,10 +2,11 @@
 layout: post
 title:  "使用EBPF验证XDP丢弃TCP报文"
 comments: true
-  tegories: BPF
+categories: BPF
 date:   2021-09-15 15:52:54
 ---
 
+## 验证丢弃TCP报文
 按照惯例先上代码：
 ```
 #include <uapi/linux/bpf.h>
