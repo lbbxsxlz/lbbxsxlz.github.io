@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "使用EBPF验证XDP丢弃TCP报文"
+title:  "使用EBPF验证TC丢弃TCP报文"
 comments: true
 categories: BPF
 date:   2021-09-16 20:58:54
