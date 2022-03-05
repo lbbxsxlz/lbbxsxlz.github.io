@@ -20,6 +20,10 @@ permalink: /about/
 
 ## 工作经历
     ---
+    *** 英特尔亚太研发有限公司 *** 
+        SOC安全设计评估验证
+        Device Identifier Composition Engine（DICE）
+        Security Protocol and Data Model (SPDM) 
     *** 浙江大华技术股份有限公司 *** 
         方向一：设备安全与设备溯源 
             Boot级的安全启动，kernel验签启动；Kernel、根文件系统、应用程序固件加解密。
@@ -29,6 +33,7 @@ permalink: /about/
             core文件实时压缩工具，保证core文件与APP之间的对应关系，core文件分区整理。
             栈回溯工具，匹配ARM架构的栈回溯接口，周期性获取与筛选内核信息。
             重构程序打包流程，优化程序中squashfs文件系统制作。设备启动时间优化。
+            应用程序升级方案优化，差分升级实现，小内存安全升级方案实现。
         方向三：驱动开发与维护
             以太网FlowControl、NAT、VLAN、mode and duplex AutoChange、IP search
             4G、5G、WiFi、SD Card; 双4G NAT实时切换 TUN/TAP虚拟网卡
