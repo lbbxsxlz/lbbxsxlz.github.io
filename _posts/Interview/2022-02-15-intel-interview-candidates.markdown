@@ -4,7 +4,7 @@ title:  "面试候选人"
 comments: true
 categories: Interview
 published: false
-date:   2021-09-27 20:52:01
+date:   2022-02-15 20:52:01
 ---
 
 受老板委托面试一个候选人，由于候选人工作才一年半，根据其简历，提出了如下几个问题。
@@ -28,3 +28,4 @@ date:   2021-09-27 20:52:01
 * Linux上tcpdump工具依赖于哪个库
 * 进程间通讯方式
 * 进程在内存中的布局bss\data\stack\heap\text
+
