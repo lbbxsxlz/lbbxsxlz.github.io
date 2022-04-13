@@ -11,9 +11,9 @@ date:   2022-04-12 21:07:09
 
 ## 项目相关
 * strace跟踪进程中使用的系统调用是什么
-* NFS文件系统中的远程系统调用
-* SSD块操作
-* hotpage 与clodpage的区别
+* NFS文件系统中的远程系统调用实现
+* SSD在Linux driver中的块操作, 是 write-through 还是 write-back
+* hotpage与clodpage的判断原理
 
 ## 技术知识储备
 * C语言中fopen函数mode中“w”与“wb”的区别
