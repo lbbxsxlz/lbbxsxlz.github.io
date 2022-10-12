@@ -21,10 +21,10 @@ permalink: /about/
 ## 工作经历
     ---
     *** 英特尔亚太研发有限公司 *** 
-        SOC安全设计、评估、验证
-        Device Identifier Composition Engine（DICE）
-        Security Protocol and Data Model (SPDM) 
-        Memory Security Engine(Mutli-Key Total Memory Encryption)
+        SOC安全设计、评估、验证;IP Authentication and Attestation
+            Device Identifier Composition Engine（DICE）
+            Security Protocol and Data Model (SPDM) 
+            Memory Security Engine(Mutli-Key Total Memory Encryption)
         
     *** 浙江大华技术股份有限公司 *** 
         方向一：设备安全与设备溯源 
