@@ -2,7 +2,7 @@
 layout: post
 title:  "Intel EPT技术"
 comments: true
-categories: Intel
+categories: intel
 date:   2023-06-27 21:10:44
 ---
 
@@ -48,4 +48,4 @@ PML4 entry的格式如下:
 最后，我们来看下匹配4KB的PTE的格式，
 ![PTE](PTE.jpg)
 
-至此，SDM手册中有关EPT的原理就介绍到这。
+至此，Intel SDM手册中有关EPT的原理就介绍到这。

@@ -9,8 +9,8 @@ permalink: /about/
 {:toc}
 
 ## 关于这个网站
-这个网站由github和jekyll创建。仅用来记录个人的一些技术心得与人生体会。 
-对这个网站的风格感兴趣的可以fork我在[github](https://github.com/lbbxsxlz/lbbxsxlz.github.io)上的工程。 
+这个网站由github和jekyll创建。仅用来记录个人的一些技术心得与人生体会。
+对这个网站的风格感兴趣的可以fork我在[github](https://github.com/lbbxsxlz/lbbxsxlz.github.io)上的工程。
 
 ## 关于我
 
@@ -20,14 +20,18 @@ permalink: /about/
 
 ## 工作经历
     ---
-    *** 英特尔亚太研发有限公司 *** 
+    *** 英特尔亚太研发有限公司 ***
         SOC安全设计、评估、验证;IP Authentication and Attestation
             Device Identifier Composition Engine（DICE）
-            Security Protocol and Data Model (SPDM) 
+            Security Protocol and Data Model (SPDM)
             Memory Security Engine(Mutli-Key Total Memory Encryption)
-        
-    *** 浙江大华技术股份有限公司 *** 
-        方向一：设备安全与设备溯源 
+        Dbus service development
+            SMBIOS over PLDM
+            PLDM over MCTP
+        RISC-V Privileged Architecture and Virtualization
+
+    *** 浙江大华技术股份有限公司 ***
+        方向一：设备安全与设备溯源
             Boot级的安全启动，kernel验签启动；Kernel、根文件系统、应用程序固件加解密。
             类似TRUST Zone的设备可信执行环境；设备RSA签名验证升级，密钥统一管理与分发。
             Boot下与用户态的OTP接口，用于防窜货与源回溯。安全漏洞修复工具。
