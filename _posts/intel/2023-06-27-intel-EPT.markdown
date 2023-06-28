@@ -37,11 +37,13 @@ PML4 entry的格式如下:
 
 在上述的第二个步骤中提到了EPT Page-Directory-Pointer-Table entry，当entry中的第七位为1时，该表项指向一个1G字节的page，entry的格式如下，
 ![指向1GB的PDPTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDPTE-1GBytes.jpg)
+
 而第七位为0时，指向下一级的Page Directly。
 ![指向PD的PDPTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDPTE.jpg)
 
 在第三步中提到的EPT Page-Directory-Table Entry，其第七位为1时，该表项指向一个2M字节的page，entry的格式如下，
 ![指向2MB的PDE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDE-2MBytes.jpg)
+
 而第七位为0时，指向下一级的Page Table。
 ![指向PT的PDE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDE.jpg)
 
