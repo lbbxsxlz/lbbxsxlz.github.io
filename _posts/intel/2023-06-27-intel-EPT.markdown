@@ -11,7 +11,7 @@ date:   2023-06-27 21:10:44
 假设已经获取到了客户机的物理地址，下面分析下如何利用一个客户机的物理地址，通过EPT进行寻址。
 
 注意不管是32位客户机还是64位客户机，这里统一按照64位物理地址来寻址。EPT页表是4级页表，页表的大小仍然是一个页即4KB，但是一个表项是8个字节，所以一张表只能容纳512个表项，需要9位来定位具体的表项。客户机的物理地址使用低48位来完成这一工作。如下图所示，一个48位的客户机物理地址被分为5部分，前4部分按9位划分，最后12位作为页内偏移。当处于非根模式下的CPU使用客户机操作一个客户机虚拟地址时，首先使用客户机页表进行地址转换，得到客户机物理地址(GPA)，然后CPU根据此物理地址查询EPT，在VMCS结构中有一个EPTP的指针，其中的12-51位指向EPT页表的一级目录即PML4 Table.这样根据客户机物理地址的首个9位就可以定位一个PML4 entry，一个PML4 entry理论上可以控制512GB的区域。
-![4级页表](4-level-paging.jpg)
+![4级页表](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/4-level-paging.jpg)
 1. 根据PML4 entry的12-51位记录下一级页表的地址。
 2. 使用对应的地址位数定位下一级的页表EPT Page-Directory-Pointer-Table的基址，根据客户物理地址的30-38位定位此页表中的一个表项EPT Page-Directory-Pointer-Table entry。注意这里如果该表项的第7位为1，该表项指向一个1G字节的page.第7位为0，则指向下一级页表。
 3. 然后根据表项中的12-51位，继续往下定位到第三级页表EPT Page-Directory-Table的基址，在根据客户物理地址的21-29位来定位到一个EPT Page-Directory-Table Entry。如果此Entry的第7位为1，则表示该Entry指向一个2M的page，第7位为0就指向下一级页表。
@@ -20,7 +20,7 @@ PTE中的12-51位指向一个4K物理页面，最后根据客户物理地址的�
 
 接下来我们重点看下EPT的每一级表的Entry格式，
 PML4 entry的格式如下:
-![PML4E](PML4E.jpg)
+![PML4E](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PML4E.jpg)
 众所周知，PML4 entry的12-51位记录下一级页表的地址，而这40位肯定是用不完的，根据CPU的架构，采取不同的位数，具体如下：
 
 在Intel中使用MAXPHYADDR来表示最大的物理地址，我们可以通过CPUID的指令来获得处理支持的最大物理地址，然而这已经不在此次的讨论范围之内，我们需要知道的只是：
@@ -36,16 +36,16 @@ PML4 entry的格式如下:
 而MAXPHYADDR为36位正是普通32位机的PAE模式。
 
 在上述的第二个步骤中提到了EPT Page-Directory-Pointer-Table entry，当entry中的第七位为1时，该表项指向一个1G字节的page，entry的格式如下，
-![指向1GB的PDPTE](PDPTE-1GBytes.jpg)
+![指向1GB的PDPTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDPTE-1GBytes.jpg)
 而第七位为0时，指向下一级的Page Directly。
-![指向PD的PDPTE](PDPTE.jpg)
+![指向PD的PDPTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDPTE.jpg)
 
 在第三步中提到的EPT Page-Directory-Table Entry，其第七位为1时，该表项指向一个2M字节的page，entry的格式如下，
-![指向2MB的PDE](PDE-2MBytes.jpg)
+![指向2MB的PDE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDE-2MBytes.jpg)
 而第七位为0时，指向下一级的Page Table。
-![指向PT的PDE](PDE.jpg)
+![指向PT的PDE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDE.jpg)
 
 最后，我们来看下匹配4KB的PTE的格式，
-![PTE](PTE.jpg)
+![PTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PTE.jpg)
 
 至此，Intel SDM手册中有关EPT的原理就介绍到这。
