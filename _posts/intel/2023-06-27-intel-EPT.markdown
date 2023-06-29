@@ -18,8 +18,7 @@ date:   2023-06-27 21:10:44
 4. 根据entry的12-51位定位第四级页表EPT Page-Table基址 ，然后根据客户物理地址的12-20位定位一个Page Table。
 PTE中的12-51位指向一个4K物理页面，最后根据客户物理地址的最低12位作为偏移，定位到具体的物理地址。
 
-接下来我们重点看下EPT的每一级表的Entry格式，
-PML4 entry的格式如下:
+接下来我们重点看下EPT的每一级表的Entry格式，PML4 entry的格式如下:<br>
 ![PML4E](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PML4E.jpg)
 众所周知，PML4 entry的12-51位记录下一级页表的地址，而这40位肯定是用不完的，根据CPU的架构，采取不同的位数，具体如下：
 
@@ -35,19 +34,19 @@ PML4 entry的格式如下:
 
 而MAXPHYADDR为36位正是普通32位机的PAE模式。
 
-在上述的第二个步骤中提到了EPT Page-Directory-Pointer-Table entry，当entry中的第七位为1时，该表项指向一个1G字节的page，entry的格式如下，
+在上述的第二个步骤中提到了EPT Page-Directory-Pointer-Table entry，当entry中的第七位为1时，该表项指向一个1G字节的page，entry的格式如下，<br>
 ![指向1GB的PDPTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDPTE-1GBytes.jpg)
 
-而第七位为0时，指向下一级的Page Directly。
+而第七位为0时，指向下一级的Page Directly。<br>
 ![指向PD的PDPTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDPTE.jpg)
 
-在第三步中提到的EPT Page-Directory-Table Entry，其第七位为1时，该表项指向一个2M字节的page，entry的格式如下，
+在第三步中提到的EPT Page-Directory-Table Entry，其第七位为1时，该表项指向一个2M字节的page，entry的格式如下，<br>
 ![指向2MB的PDE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDE-2MBytes.jpg)
 
-而第七位为0时，指向下一级的Page Table。
+而第七位为0时，指向下一级的Page Table。<br>
 ![指向PT的PDE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PDE.jpg)
 
-最后，我们来看下匹配4KB的PTE的格式，
+最后，我们来看下匹配4KB的PTE的格式，<br>
 ![PTE](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/intel_ept/PTE.jpg)
 
 至此，Intel SDM手册中有关EPT的原理就介绍到这。
