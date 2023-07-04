@@ -20,3 +20,4 @@ for its VS-mode guest.
 The current virtualization mode, denoted V, indicates whether the hart is currently executing in a guest. When V=1, the hart is either in virtual S-mode (VS-mode), or in
 virtual U-mode (VU-mode) atop a guest OS running in VS-mode. When V=0, the hart is either in M-mode, in HS-mode, or in U-mode atop an OS running in HS-mode. The
 virtualization mode also indicates whether two-stage address translation is active (V=1) or inactive (V=0).
+![privileged](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/risc-v/risc-v-privileged.jpg)
