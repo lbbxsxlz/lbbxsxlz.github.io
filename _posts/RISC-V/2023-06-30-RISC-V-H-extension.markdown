@@ -3,7 +3,7 @@ layout: post
 title:  "RISV-V Hypervisor Extension"
 comments: true
 categories: intel
-published: false
+published: true
 date:   2023-06-30 04:10:41
 ---
 
@@ -21,3 +21,9 @@ The current virtualization mode, denoted V, indicates whether the hart is curren
 virtual U-mode (VU-mode) atop a guest OS running in VS-mode. When V=0, the hart is either in M-mode, in HS-mode, or in U-mode atop an OS running in HS-mode. The
 virtualization mode also indicates whether two-stage address translation is active (V=1) or inactive (V=0).
 ![privileged](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/risc-v/risc-v-privileged.jpg)
+
+
+An OS or hypervisor running in HS-mode uses the supervisor CSRs to interact with the exception, interrupt, and address-translation subsystems. Additional CSRs are provided
+to HS-mode, but not to VS-mode, to manage two-stage address translation and to control the behavior of a VSmode guest: hstatus, hedeleg, hideleg, hvip, hip, hie, hgeip,
+hgeie, henvcfg, henvcfgh, hcounteren, htimedelta, htimedeltah, htval, htinst, and hgatp.
+![CSR](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/risc-v/risc-v-CSR.png)
