@@ -9,18 +9,23 @@ permalink: /about/
 {:toc}
 
 ## 关于这个网站
-这个网站由github和jekyll创建。仅用来记录个人的一些技术心得与人生体会。
-对这个网站的风格感兴趣的可以fork我在[github](https://github.com/lbbxsxlz/lbbxsxlz.github.io)上的工程。
+这个网站使用github和jekyll创建。仅用来记录个人的一些技术心得与人生体会。
 
 ## 关于我
 
 ![me](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/about/me.png)
 
-热爱动漫，是海贼王的忠实粉丝。从事软件行业，存粹是因缘际会，目前算是一个合格的程序员吧。
+从事软件行业，存粹是因缘际会，目前算是一个合格的程序员吧。热爱动漫，是海贼王的忠实粉丝。
 
 ## 工作经历
     ---
     *** 英特尔亚太研发有限公司 ***
+        Pool Memory SOC and Support CXL Dynamic Capacity Device(DCD)
+            Fabric Manager CXL DCD集成，处理HOST的内存请求，DPA管理
+            BMC Daemon与其他组件交互，CCI command处理，RESTful API交互
+            Pool Memory SOC\BMC\HOST使用RPC，Redfish完成注册与电源管理
+            Pool Memory SOC与BMC\HOST之间的Device Attestation
+            Pool Memory SOC Power On期间的疑难杂症解决
         SOC安全设计、评估、验证;IP Authentication and Attestation
             Device Identifier Composition Engine（DICE）
             Security Protocol and Data Model (SPDM)
@@ -29,10 +34,11 @@ permalink: /about/
             SMBIOS over PLDM
             PLDM over MCTP
         RISC-V Privileged Architecture and Virtualization
+        ARM CCA(RME) vs. Intel TDX/TDX-IO
 
     *** 浙江大华技术股份有限公司 ***
         方向一：设备安全与设备溯源
-            Boot级的安全启动，kernel验签启动；Kernel、根文件系统、应用程序固件加解密。
+            uBoot多级安全启动，kernel验证启动；Kernel、根文件系统、应用程序固件加解密。
             类似TRUST Zone的设备可信执行环境；设备RSA签名验证升级，密钥统一管理与分发。
             Boot下与用户态的OTP接口，用于防窜货与源回溯。安全漏洞修复工具。
         方向二：性能分析与工具开发
