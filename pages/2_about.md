@@ -25,7 +25,7 @@ permalink: /about/
             BMC Daemon与其他组件交互，CCI command处理，RESTful API交互
             Pool Memory SOC\BMC\HOST使用RPC，Redfish完成注册与电源管理
             Pool Memory SOC与BMC\HOST之间的Device Attestation
-            Pool Memory SOC Power On期间的疑难杂症解决
+            Pool Memory SOC Power On期间的疑难杂症(Crash, Hang)解决
         SOC安全设计、评估、验证;IP Authentication and Attestation
             Device Identifier Composition Engine（DICE）
             Security Protocol and Data Model (SPDM)
