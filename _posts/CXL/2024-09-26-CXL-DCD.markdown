@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "CXL Dynamic Capacity Device"
+comments: true
+categories: CXL
+published: true
+date:   2024-09-26 54:11:41
+---
+
+Dynamic Capacity is a feature of a CXL memory device that allows memory capacity to change dynamically without the need for resetting the device. 
+A DCD is a CXL memory device that implements Dynamic Capacity. Unlike a traditional DPA range that a CXL memory device might support, a Dynamic 
+Capacity DPA range is subdivided into 1 to 8 DC Regions, each of which is subdivided by the DCD into a number of fixed-size blocks, referred to 
+as DC blocks. The host software is expected to program the maximum potential capacity utilizing one or more HDM decoders to span the entire DPA
+range of all configured regions. The DCD controls the allocation of these DC blocks to the host and utilizes events to signal the host when 
+changes to the allocation of these DC blocks occurs. The DCD communicates the state of these DC blocks through an Extent List that describes the 
+starting DPA and length of all DC blocks the host can access. The Extent List does not contain extents that are still pending acceptance from the 
+host via the Add Dynamic Capacity Response command (see Section 8.2.9.9.9.3). Similarly, the Extent List does contain extents that are still 
+pending release acceptance from the host via the Release Dynamic Capacity command (see Section 8.2.9.9.9.4).
+
+
+<div align=center><img src=../..//images/CXL/dcd.gif></img></div>
+<div align=center>DCD illustration from Astera Labs</div>

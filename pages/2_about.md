@@ -20,12 +20,12 @@ permalink: /about/
 ## 工作经历
     ---
     *** 英特尔亚太研发有限公司 ***
-        Pool Memory SOC and Support CXL Dynamic Capacity Device(DCD)
+        Pooled Memory SOC and Support CXL Dynamic Capacity Device(DCD)
             Fabric Manager CXL DCD集成，处理HOST的内存请求，DPA管理
             BMC Daemon与其他组件交互，CCI command处理，RESTful API交互
-            Pool Memory SOC\BMC\HOST使用RPC，Redfish完成注册与电源管理
-            Pool Memory SOC与BMC\HOST之间的Device Attestation
-            Pool Memory SOC Power On期间的疑难杂症(Crash, Hang)解决
+            Pooled Memory SOC\BMC\HOST使用RPC，Redfish完成注册与电源管理
+            Pooled Memory SOC与BMC\HOST之间的Device Attestation
+            Pooled Memory SOC Power On期间的疑难杂症(Crash, Hang)解决
         SOC安全设计、评估、验证;IP Authentication and Attestation
             Device Identifier Composition Engine（DICE）
             Security Protocol and Data Model (SPDM)
