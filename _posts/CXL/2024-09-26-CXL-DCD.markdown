@@ -17,6 +17,4 @@ starting DPA and length of all DC blocks the host can access. The Extent List do
 host via the Add Dynamic Capacity Response command (see Section 8.2.9.9.9.3). Similarly, the Extent List does contain extents that are still 
 pending release acceptance from the host via the Release Dynamic Capacity command (see Section 8.2.9.9.9.4).
 
-
-<div align=center><img src=https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/CXL/dcd.gif></img></div>
-<div align=center>DCD illustration from Astera Labs</div>
+![DCD illustration from Astera Labs](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/CXL/dcd.gif)
