@@ -2,7 +2,7 @@
 layout: post
 title:  "RISV-V Hypervisor Extension"
 comments: true
-categories: intel
+categories: RISC-V
 published: true
 date:   2023-06-30 04:10:41
 ---
