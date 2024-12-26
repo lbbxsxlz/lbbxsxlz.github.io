@@ -20,3 +20,7 @@ pending release acceptance from the host via the Release Dynamic Capacity comman
 The next figure is the DCD illustration from Astera Labs.
 
 ![DCD illustration from Astera Labs](https://github.com/lbbxsxlz/lbbxsxlz.github.io/raw/master/images/CXL/dcd.gif)
+
+[](https://memverge.com/unleashing-the-future-of-memory-management/)
+
+[](https://lwn.net/Articles/986021/)

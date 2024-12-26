@@ -62,4 +62,4 @@ permalink: /about/
 
 ## 联系我
 - [github](https://github.com/lbbxsxlz)
-- email:lbbxsxlz@gmail.com newofcortexm3@163.com
+- email:lbbxsxlz@gmail.com binbinlz@163.com
